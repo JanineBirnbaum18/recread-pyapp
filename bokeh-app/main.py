@@ -63,6 +63,15 @@ from obspy.taup import TauPyModel
 
 from pyproj import Transformer
 
+from get_gecko_driver import GetGeckoDriver
+from selenium import webdriver
+
+get_driver = GetGeckoDriver()
+get_driver.install()
+
+driver = webdriver.Firefox()
+driver.get("https://google.com")
+
 ###############################################################################
 # Tab 1: Select event
 ###############################################################################
