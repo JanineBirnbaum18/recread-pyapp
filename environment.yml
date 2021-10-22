@@ -12,7 +12,9 @@ dependencies:
   - pyproj
   - pandas
   - pytables
+  - selenium
   - conda
   - pip
   - pip:
     - jupyter-server-proxy
+    - get-gecko-driver
