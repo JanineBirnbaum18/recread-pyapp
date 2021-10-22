@@ -13,8 +13,6 @@ dependencies:
   - pandas
   - pytables
   - conda
-  - selenium
-  - firefox geckodriver
   - pip
   - pip:
     - jupyter-server-proxy
