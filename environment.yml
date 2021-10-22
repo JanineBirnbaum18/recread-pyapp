@@ -1,7 +1,20 @@
+name: recread
+channels:
+  - conda-forge
+  - defaults
 dependencies:
   - bokeh
   - pandas
   - scipy
+  - h5py
+  - obspy=1.2.0
+  - bokeh=2.2.3
+  - pyproj
+  - pandas
+  - pytables
+  - conda
+  - selenium
+  - firefox geckodriver
   - pip
   - pip:
     - jupyter-server-proxy
