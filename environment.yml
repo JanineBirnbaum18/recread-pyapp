@@ -4,19 +4,19 @@ channels:
   - defaults
   - https://conda.anaconda.org/conda-forge
 dependencies:
-  - python=3.8.8=h7840368_0_cpython
-  - bokeh=2.3.0=py38haa244fe_0
-  - pandas=1.2.2=py38h4c96930_0
-  - scipy=1.6.0=py38h5f893b4_0
-  - h5py=3.1.0=nompi_py38h022eade_100
-  - hdf5=1.10.6=nompi_h5268f04_1114
-  - obspy=1.2.2=py38h4b8e87e_0
-  - bokeh=2.3.0=py38haa244fe_0
-  - proj=7.2.0=h1cfcee9_2
-  - pyproj=3.0.0.post1=py38h0ae89ba_0
+  - python=3.8.8
+  - bokeh=2.3.0
+  - pandas=1.2.2
+  - scipy=1.6.0
+  - h5py=3.1.0
+  - hdf5=1.10.6
+  - obspy=1.2.2
+  - bokeh=2.3.0
+  - proj=7.2.0
+  - pyproj=3.0.0.post1
   - pytables
-  - firefox=86.0=h0e60522_0
-  - geckodriver=0.29.0=hdb13177_0
+  - firefox=86.0
+  - geckodriver=0.29.0
   - conda
   - pip
   - pip:
