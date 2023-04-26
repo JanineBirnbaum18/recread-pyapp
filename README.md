@@ -1,18 +1,23 @@
-# Running a bokeh server with Binder
+## Program for the record reading waveform plot
+Written by Janine Birnbaum (jab2443@columbia.edu), Christopher Carchedi, Michelle Lee, Theresa Sawi, Joshua Russell.
+Previous Matlab-based version written by Ge Jin, available at https://github.com/jbrussell/recreadplot.
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/JanineBirnbaum18/recread-pyapp/master?urlpath=/proxy/5006/bokeh-app)
+## Code specifications
+Python (3.8+)
 
-This repository demonstrates how to run a Bokeh server from within Binder. To do so, we did the following things:
+Installation: 
+build python environment from environment.yml
 
-1. Created a `bokeh-app` directory in the repo with a `main.py` file in it. This is the application that will be served. We've added the
-   [Bokeh weather example](https://github.com/bokeh/bokeh/tree/master/examples/app/weather) as a demo. 
-2. Installed `bokeh` for the viz and `jupyter_server_proxy` which we'll use to direct people to the port on which Bokeh runs. See `environment.yml`.
-3. Added a custom server extension (`bokehserverextension.py`) that will be run to direct people to the Bokeh app (which is run on a port)
-4. Used `postBuild` to enable the `jupyter_server_proxy` extension, then set up and enable our custom server extension for Bokeh. 
-5. Created a Binder link that uses `urlpath` to point users to the port on which the Bokeh server will run:
+git clone https://github.com/JanineBirnbaum18/recreadplot.git
+cd recreadplot
+conda env create -f environment.yml
+conda activate recread
 
-   ```
-   https://mybinder.org/v2/gh/binder-examples/bokeh/master?urlpath=/proxy/5006/bokeh-app
-   ```
-   
-When people click on the Binder link, they should be directed to the running Bokeh app.
+## To run: 
+bokeh serve --show recread.py
+
+Launches interactive window in browser. 
+Downloaded data is saved into eventdat.h5, if file exists it is read on launch.
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/JanineBirnbaum18/recreadplot/HEAD)
+[![DOI](https://zenodo.org/badge/343444919.svg)](https://zenodo.org/badge/latestdoi/343444919)
